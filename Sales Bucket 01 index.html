@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PAGE TITLE  -->
+    <title>Your Offer Name</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        background: url(https://source.unsplash.com/AdOeV-qlAs4/1920x1280)
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      main {
+        background: rgba(6, 5, 5, 0.797);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="flex flex-col h-screen justify-between">
+      <header class="md:mb-8">
+        <div
+          class="
+            bg-gradient-to-t
+            from-purple-500
+            via-purple-800
+            to-purple-900
+            py-1
+          "
+        >
+          <div class="container mx-auto">
+            <div
+              class="lg:flex lg:items-center lg:justify-between px-3 lg:px-0"
+            >
+              <!-- Product or Service Name  -->
+              <div class="text-2xl">Your Product Name</div>
+
+              <!-- Stars  -->
+              <div class="flex text-yellow-400">
+                <span class="text-gray-300x">4.6 stars from 6,000+ users</span>
+                <span class="ml-2 material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star_half</span>
+              </div>
+
+              <!-- Author Name  -->
+              <div class="flex items-center justify-end">
+                <span class="">Abiodun Kadri</span>
+                <a href="#" class="ml-3">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="https://firebasestorage.googleapis.com/v0/b/course-creator-f1a58.appspot.com/o/Abiodun%20Kadri.png?alt=media&token=e72beb24-7696-47af-9cd3-146f30234581"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main
+        class="
+          container
+          mb-auto
+          mx-auto
+          md:border-2
+          border-purple-900
+          shadow-2xl
+          max-w-6xl
+        "
+      >
+        <div class="aspect-w-16 aspect-h-9 mb-7">
+          <!-- YOUR VIDEO  -->
+          <video
+            src="https://firebasestorage.googleapis.com/v0/b/course-creator-f1a58.appspot.com/o/Go%20Video.mp4?alt=media&token=a6350bf9-3cbd-4b85-ba58-261194c244d7"
+            poster="https://firebasestorage.googleapis.com/v0/b/course-creator-f1a58.appspot.com/o/Abiodun%20Kadri.png?alt=media&token=e72beb24-7696-47af-9cd3-146f30234581"
+            controls
+            style="width: 100%"
+            class="md:rounded-xl"
+          ></video>
+        </div>
+
+        <!-- Buy Now  -->
+        <div class="pb-7">
+          <div class="text-purple-500 text-center text-xl font-semibold mb-4">
+            Get Your Access Now!
+          </div>
+
+          <!-- Buy Now Button  -->
+          <div class="mb-7 text-center">
+            <!-- YOUR BUY BUTTON -->
+            <form
+              action="https://paystack.com/pay/ef42ifk14r"
+              method="post"
+              target="_blank"
+            >
+              <input
+                type="hidden"
+                name="business"
+                value="sb-dyk6x7367177@business.example.com"
+              />
+              <input type="hidden" name="cmd" value="_xclick" />
+              <input
+                type="hidden"
+                name="item_name"
+                value="Hot Sauce-12oz. Bottle"
+              />
+              <input type="hidden" name="amount" value="5.95" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <button
+                class="button bg-purple-500 px-12 py-2 rounded-lg"
+                type="submit"
+              >
+                <div class="flex">
+                  <span class="material-icons mr-2">shopping_cart</span>
+                  <span>Buy Now</span>
+                </div>
+              </button>
+              <img
+                alt=""
+                width="1"
+                height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+              />
+            </form>
+            <!-- (buy button end) -->
+          </div>
+        </div>
+      </main>
+      <footer
+        class="
+          text-right text-gray-400
+          flex flex-col
+          text-center
+          items-center
+          bg-gray-900
+          md:flex-row md:bg-transparent md:justify-center md:pb-5 md:text-sm
+        "
+      >
+        <!-- YOUR LEGAL LINKS  -->
+        <a href="#terms" target="_blank" class="mx-4 py-3 md:py-0">Terms</a>
+        <a href="#privacy" target="_blank" class="mx-4 py-3 md:py-0">Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>
